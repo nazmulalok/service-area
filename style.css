@@ -1,0 +1,68 @@
+.service-section {
+    padding: 50px 0;
+}
+
+.img-box {
+    border-radius: 3px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.img-box img {
+    border-radius: 3px;
+    width: 100%;
+}
+
+.half-area {
+    border: 1px solid #000000b5;
+    border-radius: 5px;
+    background-color: #6666662b;
+    height: 313px;
+}
+
+.service-city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: #000000b5;
+    padding: 5px;
+}
+
+.service-city img {
+    width: 45px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.dvCity-list-content {
+    overflow-y: scroll;
+    height: 300px;
+    position: relative;
+    height: 225px;
+    padding: 20px;
+}
+
+ul.cities {
+    list-style-type: none;
+    margin: 0;
+    column-count: 2;
+    padding: 0;
+}
+
+.cities li a {
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cities li a:hover {
+    color: #fff;
+    background-color: #000000b5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s ease;
+}
