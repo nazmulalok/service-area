@@ -14,10 +14,14 @@
 }
 
 .half-area {
-    border: 1px solid #000000b5;
-    border-radius: 5px;
+    border: 1px solid #00000059;
+    border-radius: 3px;
     background-color: #6666662b;
     height: 313px;
+}
+
+.service-section h1 a {
+    color: #fff;
 }
 
 .service-city {
@@ -38,10 +42,23 @@
 
 .dvCity-list-content {
     overflow-y: scroll;
-    height: 300px;
     position: relative;
     height: 225px;
     padding: 20px;
+}
+
+.dvCity-list-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dvCity-list-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.dvCity-list-content::-webkit-scrollbar-thumb {
+    background-color: #424242;
+    border-radius: 10px;
 }
 
 ul.cities {
@@ -55,9 +72,23 @@ ul.cities {
     background-color: #fff;
     padding: 5px 10px;
     margin-bottom: 10px;
-    display: inline-block;
     width: 100%;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cities li a:after {
+    content: '\f124';
+    font-family: fontawesome;
+    color: #000;
+    background-color: #00000026;
+    height: 25px;
+    width: 25px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
 }
 
 .cities li a:hover {
@@ -65,4 +96,55 @@ ul.cities {
     background-color: #000000b5;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.cities li a:hover:after {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) and (min-width: 991px) {
+    .half-area {
+        height: 260px;
+    }
+
+    .dvCity-list-content {
+        height: 175px;
+    }
+}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .dvCity-list-content {
+        height: 245px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 350px) {
+    .dvCity-list-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    ul.cities {
+        column-count: 1;
+    }
+
+    .service-city img {
+        width: 35px;
+    }
 }
